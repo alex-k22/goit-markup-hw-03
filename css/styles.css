@@ -68,7 +68,6 @@ img {
 	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
-	/* outline: 3px solid orange; */
 }
 .section {
 	padding-top: 94px;
@@ -93,6 +92,10 @@ img {
 	display: flex;
 	margin-left: 93px;
 	margin-right: auto;
+}
+.contact.link {
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
 .site-nav .item:not(:last-child) {
 	margin-right: 50px;
@@ -126,9 +129,10 @@ img {
 	align-items: center;
 	margin-right: auto;
 }
-.footer-flex {
+.header-flex {
 	display: flex;
 	align-items: center;
+	border-bottom: 1px solid #ececec; */
 }
 .site-nav .link:hover,
 .contact:hover,
@@ -153,7 +157,6 @@ img {
 	color: #ffffff;
 }
 .hero .button {
-	/* display: inline-block; */
 	min-width: 216px;
 	height: 50px;
 	padding: 10px 31px;
@@ -210,6 +213,11 @@ img {
 	display: flex;
 	justify-content: space-between;
 }
+.workers .item {
+	background-color: var(--main-background);
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
 .team .member {
 	font-weight: 500;
@@ -225,6 +233,7 @@ img {
 	font-size: 16px;
 	line-height: calc(19 / 16);
 	text-align: center;
+	padding-bottom: 30px;
 }
 /* Footer */
 .site-footer {
@@ -272,18 +281,39 @@ img {
 	background-color: var(--team-background);
 	color: var(--header-color);
 	border: 0;
+	padding: 6px 22px;
 	cursor: pointer;
 }
 .btn-current {
 	color: var(--main-background);
 	background-color: var(--accent-color);
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-bottom: 20px;
 }
-
+.btn-group {
+	display: flex;
+	justify-content: center;
+}
+.btn-group .btn {
+	margin-right: 9px;
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+}
+.examples {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 .examples .example-header {
 	font-size: 18px;
 	line-height: calc(36 / 18);
 	letter-spacing: 0.06em;
 	color: var(--header-color);
+	margin-top: 20px;
+	margin-bottom: 4px;
+	padding-left: 24px;
+	padding-right: 24px;
 }
 .examples .link {
 	text-decoration: none;
@@ -295,4 +325,16 @@ img {
 	letter-spacing: 0.03em;
 	text-decoration: none;
 	color: var(--main-text-color);
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-bottom: 20px;
+}
+.examples .example {
+	width: 370px;
+	margin-top: 30px;
+	margin-right: 30px;
+	border: 1px solid #eeeeee;
+}
+.examples .example:nth-child(3n) {
+	margin-right: 0;
 }
